@@ -1,0 +1,34 @@
+const handleNameChange = () => {
+    const names = ['Bob', 'Kevin', 'Ranjeth'];
+    const randInt = Math.floor(Math.random() * 3);
+    // setName(names[randInt]);
+}
+
+const handleClick = () => {
+    console.log(setCount(count + 1), count);
+}
+
+const handleClick2 = (name) => {
+    console.log(`${name} was clicked.`);
+}
+
+const handleClick3 = (e) => {
+    console.log(e.target.innerText);
+}
+
+const data = {
+    firstname: "Ranjeth",
+    lastname: "Ravichandran"
+}
+
+const [count, setCount] = useState(0);
+
+<main>
+    <p>{data.firstname} {data.lastname}</p>
+    <p onDoubleClick={handleClick}>
+        Random Name : " {name} "  !
+    </p>
+    <button onClick={handleNameChange}>Change Name</button>
+    <button onClick={handleClick}>Count ++</button>
+    <button onClick={(e) => handleClick3(e)}>Click it!</button>
+</main>
