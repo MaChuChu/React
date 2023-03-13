@@ -1,5 +1,14 @@
 # Chapter 1 : Introduction to React
 
+Code to create REACT app
+```BASH
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+Shortcut to get react class ready.
+- Ctrl + Alt + R then type rafce<Br><br>
 This code creates a construct/struct of a data type with two variables which can be reaclled in js:
 ```JSX
 const data = {
