@@ -18,4 +18,12 @@ State is a set of observable properties that control the behavior of the compone
 - Props are set by parent components, State is generally updated by event handlers. 
 
 **React Hooks**
-Hooks let developers use state and other React features, without writing a class.
+Hooks let developers use state and other React features, without writing a class.<br>
+Rules for hooks:
+- Only call hooks at the Top level. Don't call hooks inside loops, conditions, or nested functions.
+- Call hooks from React function components.
+- Call hooks from custom hooks.
+
+https://legacy.reactjs.org/docs/hooks-rules.html
+
+https://nikgraf.github.io/react-hooks/
