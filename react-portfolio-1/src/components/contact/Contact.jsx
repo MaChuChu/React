@@ -2,6 +2,8 @@ import React from 'react';
 import './contact.css';
 
 import ContactOptions from './ContactOptions';
+import ContactForm from './ContactForm';
+
 
 const Contact = () => {
   return (
@@ -10,9 +12,7 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="container contact_container">
         <ContactOptions />
-        <form action="">
-
-        </form>
+        <ContactForm />
       </div>
     </section>
   )

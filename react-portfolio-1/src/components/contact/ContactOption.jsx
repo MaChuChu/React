@@ -8,21 +8,21 @@ const ContactOption = ({type, name, url}) => {
 
   function check() {
     if (type === "Email") {
-        <MdOutlineEmail />
-    } else if (type === "") {
-        <RiMessengerLine />
+        return <MdOutlineEmail className='contact_option-icon'/>
+    } else if (type === "Messenger") {
+        return <RiMessengerLine className='contact_option-icon'/>
     }
     else {
-        <BsWhatsapp />
+        return <BsWhatsapp className='contact_option-icon'/>
     }
   }
     
   return (
     <article className='contact_option'>
         {check()}
-        <h4>Email</h4>
-        <h5>ranjeth1965@gmail.com</h5>
-        <a href="mailto:ranjeth1965@gmail.com">Send a message</a>
+        <h4>{type}</h4>
+        <h5>{name}</h5>
+        <a href={url} target="_blank" rel="noreferrer">Send a message</a>
     </article>
   )
 }
